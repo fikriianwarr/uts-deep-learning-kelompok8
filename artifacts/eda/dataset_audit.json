@@ -1,0 +1,35 @@
+{
+  "total": 27000,
+  "counts": {
+    "AnnualCrop": 3000,
+    "Forest": 3000,
+    "HerbaceousVegetation": 3000,
+    "Highway": 2500,
+    "Industrial": 2500,
+    "Pasture": 2000,
+    "PermanentCrop": 2500,
+    "Residential": 3000,
+    "River": 2500,
+    "SeaLake": 3000
+  },
+  "sizes": {
+    "(64, 64)": 27000
+  },
+  "modes": {
+    "RGB": 27000
+  },
+  "verified_broken_files": [],
+  "sha256_exact_duplicate_pairs": [],
+  "estimated_channel_means_sample": [
+    87.33999633789062,
+    96.72000122070312,
+    103.69999694824219
+  ],
+  "channel_sample_images": 1350,
+  "splits": {
+    "train": 18900,
+    "val": 4050,
+    "test": 4050
+  },
+  "limitation": "Identical-byte hashes do not detect near-duplicate imagery or spatial leakage."
+}

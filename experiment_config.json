@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "image_size": 64,
+  "batch_size": 64,
+  "workers": 0,
+  "baseline": {
+    "epochs": 8,
+    "learning_rate": 0.0005,
+    "patience": 4
+  },
+  "feature_extraction": {
+    "epochs": 5,
+    "learning_rate": 0.001,
+    "patience": 3
+  },
+  "fine_tuning": {
+    "epochs": 8,
+    "learning_rate": 5e-05,
+    "patience": 4
+  },
+  "threshold_minimum_coverage": 0.7,
+  "reason": "Input native 64x64; both CNNs share split and preprocessing. Full dataset; test sealed until all checkpoints and threshold are fixed."
+}

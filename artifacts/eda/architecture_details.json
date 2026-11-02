@@ -1,0 +1,180 @@
+{
+  "baseline": {
+    "total_parameters": 316970,
+    "leaf_layers": 20,
+    "stages": [
+      {
+        "stage": "Input RGB",
+        "output": [
+          1,
+          3,
+          64,
+          64
+        ],
+        "parameters": 0
+      },
+      {
+        "stage": "Conv BN ReLU MaxPool 1",
+        "output": [
+          1,
+          32,
+          32,
+          32
+        ],
+        "parameters": 928
+      },
+      {
+        "stage": "Conv BN ReLU MaxPool 2",
+        "output": [
+          1,
+          64,
+          16,
+          16
+        ],
+        "parameters": 18560
+      },
+      {
+        "stage": "Conv BN ReLU MaxPool 3",
+        "output": [
+          1,
+          128,
+          8,
+          8
+        ],
+        "parameters": 73984
+      },
+      {
+        "stage": "Conv BN ReLU MaxPool 4",
+        "output": [
+          1,
+          192,
+          4,
+          4
+        ],
+        "parameters": 221568
+      },
+      {
+        "stage": "AdaptiveAvgPool Dropout Linear",
+        "output": [
+          1,
+          10
+        ],
+        "parameters": 1930
+      }
+    ]
+  },
+  "efficientnet": {
+    "total_parameters": 4020358,
+    "leaf_layers": 230,
+    "stages": [
+      {
+        "stage": "Input RGB",
+        "output": [
+          1,
+          3,
+          64,
+          64
+        ],
+        "parameters": 0
+      },
+      {
+        "stage": "EfficientNet features 0",
+        "output": [
+          1,
+          32,
+          32,
+          32
+        ],
+        "parameters": 928
+      },
+      {
+        "stage": "EfficientNet features 1",
+        "output": [
+          1,
+          16,
+          32,
+          32
+        ],
+        "parameters": 1448
+      },
+      {
+        "stage": "EfficientNet features 2",
+        "output": [
+          1,
+          24,
+          16,
+          16
+        ],
+        "parameters": 16714
+      },
+      {
+        "stage": "EfficientNet features 3",
+        "output": [
+          1,
+          40,
+          8,
+          8
+        ],
+        "parameters": 46640
+      },
+      {
+        "stage": "EfficientNet features 4",
+        "output": [
+          1,
+          80,
+          4,
+          4
+        ],
+        "parameters": 242930
+      },
+      {
+        "stage": "EfficientNet features 5",
+        "output": [
+          1,
+          112,
+          4,
+          4
+        ],
+        "parameters": 543148
+      },
+      {
+        "stage": "EfficientNet features 6",
+        "output": [
+          1,
+          192,
+          2,
+          2
+        ],
+        "parameters": 2026348
+      },
+      {
+        "stage": "EfficientNet features 7",
+        "output": [
+          1,
+          320,
+          2,
+          2
+        ],
+        "parameters": 717232
+      },
+      {
+        "stage": "EfficientNet features 8",
+        "output": [
+          1,
+          1280,
+          2,
+          2
+        ],
+        "parameters": 412160
+      },
+      {
+        "stage": "AdaptiveAvgPool Dropout Linear",
+        "output": [
+          1,
+          10
+        ],
+        "parameters": 12810
+      }
+    ]
+  }
+}

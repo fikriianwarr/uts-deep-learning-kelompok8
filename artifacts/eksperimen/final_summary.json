@@ -1,0 +1,37 @@
+{
+  "baseline_accuracy": 0.8807407407407407,
+  "efficientnet_accuracy": 0.9439506172839506,
+  "baseline_macro_f1": 0.8806881664075978,
+  "efficientnet_macro_f1": 0.9431490692111005,
+  "threshold": {
+    "threshold": 0.99204021692276,
+    "validation_selective_accuracy": 0.9940308988764045,
+    "validation_coverage": 0.7032098765432099,
+    "minimum_coverage": 0.7,
+    "checkpoint_sha256": "313873f1c1a8be382afa8e60a85047effdac4ab214f3037727f158d954bb6b85",
+    "selection_split": "validation",
+    "split_manifest_sha256": "3ba6a3aaefdfba8b67e713454a0f10ca012ea8c8b9fc7a543db93a1efd20b1dc",
+    "selected_before_test": true,
+    "test_metrics": {
+      "threshold": 0.99204021692276,
+      "coverage": 0.6975308641975309,
+      "selective_accuracy": 0.9961061946902655,
+      "overall_accuracy": 0.9439506172839506,
+      "accepted": 2825,
+      "rejected": 1225,
+      "rejected_errors": 216,
+      "rejected_correct": 1009
+    },
+    "baseline_without_rejection": {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "selective_accuracy": 0.9439506172839506,
+      "overall_accuracy": 0.9439506172839506,
+      "accepted": 4050,
+      "rejected": 0,
+      "rejected_errors": 0,
+      "rejected_correct": 0
+    },
+    "note": "Threshold fixed on validation before test; coverage >=70% applies to validation only."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "cpu_available": 8,
+  "torch_threads_per_training_process": 4,
+  "memory_limit_gib": 8,
+  "gpu_used": false,
+  "dataset_zip_sha256": "b4f5b234ecb7d7ff9c6cddb046543b4717c53fd6e9815be6c0e80cc614f51b90"
+}

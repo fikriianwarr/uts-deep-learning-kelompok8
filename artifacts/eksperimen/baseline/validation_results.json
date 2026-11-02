@@ -1,0 +1,113 @@
+{
+  "model": "baseline",
+  "status": "VALIDATION_ONLY_NOT_FINAL",
+  "full_dataset": true,
+  "training_config": {
+    "model": "baseline",
+    "data_root": "/workspace/scratch/50482a300873/revised/KELOMPOK8/data/EuroSAT_RGB",
+    "out": "artifacts/eksperimen",
+    "image_size": 64,
+    "batch_size": 64,
+    "epochs": 8,
+    "patience": 4,
+    "learning_rate": 0.0005,
+    "seed": 42,
+    "workers": 0,
+    "sample_limit": 0,
+    "no_pretrained": false,
+    "freeze_backbone": false,
+    "cpu": false,
+    "resume": null
+  },
+  "train_samples": 18900,
+  "val_samples": 4050,
+  "test_samples_reserved": 4050,
+  "checkpoint_sha256": "9b566a589ac61ebadb8e2dfd1175f59f0973e0b142efcf2ea18bf765f47f7f5d",
+  "params": 316970,
+  "trainable_params": 316970,
+  "best_epoch": 8,
+  "validation_metrics": {
+    "loss": 0.34833542575070886,
+    "accuracy": 0.8819753086419753,
+    "macro_precision": 0.8922777977070823,
+    "macro_recall": 0.8790000000000001,
+    "macro_f1": 0.8811204836654299
+  },
+  "history": {
+    "train_loss": [
+      0.8954454762468893,
+      0.6166839179538545,
+      0.5342118560069452,
+      0.47017588349246475,
+      0.4113395945609562,
+      0.3604281174127387,
+      0.3394663646801439,
+      0.32215751124437525
+    ],
+    "train_accuracy": [
+      0.6933862433862434,
+      0.7843915343915344,
+      0.8158201058201058,
+      0.8388888888888889,
+      0.8562433862433863,
+      0.8777248677248677,
+      0.8808465608465609,
+      0.8890476190476191
+    ],
+    "val_loss": [
+      0.6733895779244694,
+      0.7293413892204379,
+      0.5532776599460177,
+      0.43066456370883516,
+      0.47071423024307063,
+      0.5399445527865563,
+      0.40056316914381807,
+      0.34833542575070886
+    ],
+    "val_accuracy": [
+      0.7718518518518519,
+      0.7414814814814815,
+      0.805679012345679,
+      0.8607407407407407,
+      0.8367901234567902,
+      0.825679012345679,
+      0.8619753086419754,
+      0.8819753086419753
+    ],
+    "val_macro_f1": [
+      0.7572897232358059,
+      0.731274689305399,
+      0.8005030244540448,
+      0.856871325671347,
+      0.8356975620225311,
+      0.8262740135663897,
+      0.8563604024185638,
+      0.8811204836654299
+    ]
+  },
+  "split_manifest_sha256": "3ba6a3aaefdfba8b67e713454a0f10ca012ea8c8b9fc7a543db93a1efd20b1dc",
+  "elapsed_seconds": 613.31,
+  "environment": {
+    "python": "3.12.14",
+    "pytorch": "2.5.1+cpu",
+    "torchvision": "0.20.1+cpu",
+    "gpu": "CPU",
+    "libraries": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "11.3.0",
+      "gradio": "5.49.1",
+      "tqdm": "4.70.1"
+    },
+    "original_distribution_metadata": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "12.3.0",
+      "gradio": "5.49.1",
+      "tqdm": "4.70.1"
+    },
+    "metadata_note": "Verified imported module versions after removing stale distribution metadata; numerical results unchanged."
+  }
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+.ipynb_checkpoints/
+data/
+deploy/space_package/
+*.log
+*.tmp
+.DS_Store

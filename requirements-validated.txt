@@ -1,0 +1,9 @@
+torch==2.5.1
+torchvision==0.20.1
+numpy==2.2.6
+pandas==2.2.3
+gradio==5.49.1
+scikit-learn==1.8.0
+matplotlib==3.10.8
+Pillow==11.3.0
+tqdm==4.70.1

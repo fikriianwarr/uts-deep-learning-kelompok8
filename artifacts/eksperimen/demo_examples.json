@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "correct",
+    "image": "examples/correct_Residential_1033.jpg",
+    "test_index": 0,
+    "original_path": "Residential/Residential_1033.jpg",
+    "true_label": "Residential",
+    "predicted_label": "Residential",
+    "confidence": 0.9950025677680969,
+    "accepted": true
+  },
+  {
+    "kind": "wrong",
+    "image": "examples/wrong_HerbaceousVegetation_2664.jpg",
+    "test_index": 33,
+    "original_path": "HerbaceousVegetation/HerbaceousVegetation_2664.jpg",
+    "true_label": "HerbaceousVegetation",
+    "predicted_label": "Highway",
+    "confidence": 0.9990978240966797,
+    "accepted": true
+  },
+  {
+    "kind": "rejected",
+    "image": "examples/rejected_Pasture_1451.jpg",
+    "test_index": 2,
+    "original_path": "Pasture/Pasture_1451.jpg",
+    "true_label": "Pasture",
+    "predicted_label": "Pasture",
+    "confidence": 0.5043437480926514,
+    "accepted": false
+  }
+]

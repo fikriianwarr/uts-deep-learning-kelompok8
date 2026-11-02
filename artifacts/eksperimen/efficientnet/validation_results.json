@@ -1,0 +1,104 @@
+{
+  "model": "efficientnet",
+  "status": "VALIDATION_ONLY_NOT_FINAL",
+  "full_dataset": true,
+  "training_config": {
+    "model": "efficientnet",
+    "data_root": "/workspace/scratch/50482a300873/revised/KELOMPOK8/data/EuroSAT_RGB",
+    "out": "artifacts/eksperimen",
+    "image_size": 64,
+    "batch_size": 64,
+    "epochs": 8,
+    "patience": 4,
+    "learning_rate": 5e-05,
+    "seed": 42,
+    "workers": 0,
+    "sample_limit": 0,
+    "no_pretrained": false,
+    "freeze_backbone": false,
+    "cpu": false,
+    "resume": "artifacts/stage1/efficientnet/best.pt"
+  },
+  "train_samples": 18900,
+  "val_samples": 4050,
+  "test_samples_reserved": 4050,
+  "checkpoint_sha256": "313873f1c1a8be382afa8e60a85047effdac4ab214f3037727f158d954bb6b85",
+  "params": 4020358,
+  "trainable_params": 4020358,
+  "best_epoch": 8,
+  "validation_metrics": {
+    "loss": 0.18570977339038142,
+    "accuracy": 0.9461728395061728,
+    "macro_precision": 0.9473219957262312,
+    "macro_recall": 0.9429555555555555,
+    "macro_f1": 0.9446476777801882
+  },
+  "history": {
+    "train_loss": [
+      1.1155817762947586,
+      0.5583255538990889,
+      0.41094648435159964,
+      0.3470071448220147,
+      0.2950931790959898,
+      0.24788002596961128,
+      0.21886632615296298,
+      0.18959074355937816
+    ],
+    "train_accuracy": [
+      0.6714814814814815,
+      0.8314285714285714,
+      0.8731746031746032,
+      0.8948677248677249,
+      0.9108465608465608,
+      0.9218518518518518,
+      0.928994708994709,
+      0.9385185185185185
+    ],
+    "val_loss": [
+      0.5386467687583264,
+      0.3669931759657683,
+      0.2994682499214455,
+      0.2562418906776993,
+      0.22941068037056628,
+      0.20788915732760488,
+      0.1981830605754146,
+      0.18570977339038142
+    ],
+    "val_accuracy": [
+      0.8375308641975309,
+      0.8928395061728395,
+      0.9118518518518518,
+      0.9244444444444444,
+      0.9323456790123457,
+      0.9390123456790124,
+      0.9395061728395062,
+      0.9461728395061728
+    ],
+    "val_macro_f1": [
+      0.8324205661376982,
+      0.8896264341399714,
+      0.9092056364215615,
+      0.9216354041197224,
+      0.9298233636119241,
+      0.9369713530967889,
+      0.9384410341709541,
+      0.9446476777801882
+    ]
+  },
+  "split_manifest_sha256": "3ba6a3aaefdfba8b67e713454a0f10ca012ea8c8b9fc7a543db93a1efd20b1dc",
+  "elapsed_seconds": 1217.52,
+  "environment": {
+    "python": "3.12.14",
+    "pytorch": "2.5.1+cpu",
+    "torchvision": "0.20.1+cpu",
+    "gpu": "CPU",
+    "libraries": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "11.3.0",
+      "gradio": "5.49.1",
+      "tqdm": "4.70.1"
+    }
+  }
+}

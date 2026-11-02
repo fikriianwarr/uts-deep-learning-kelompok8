@@ -1,0 +1,10 @@
+{
+  "threshold": 0.99204021692276,
+  "validation_selective_accuracy": 0.9940308988764045,
+  "validation_coverage": 0.7032098765432099,
+  "minimum_coverage": 0.7,
+  "checkpoint_sha256": "313873f1c1a8be382afa8e60a85047effdac4ab214f3037727f158d954bb6b85",
+  "selection_split": "validation",
+  "split_manifest_sha256": "3ba6a3aaefdfba8b67e713454a0f10ca012ea8c8b9fc7a543db93a1efd20b1dc",
+  "selected_before_test": true
+}

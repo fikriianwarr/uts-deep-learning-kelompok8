@@ -1,0 +1,30 @@
+{
+  "status": "PASSED",
+  "api_cases": 3,
+  "outputs": [
+    {
+      "kind": "correct",
+      "true_label": "Residential",
+      "predicted_label": "Residential",
+      "status": "Prediksi: Residential | confidence 99.5003%; ambang 99.2040%. DITERIMA",
+      "gradcam_produced": true
+    },
+    {
+      "kind": "wrong",
+      "true_label": "HerbaceousVegetation",
+      "predicted_label": "Highway",
+      "status": "Prediksi: Highway | confidence 99.9098%; ambang 99.2040%. DITERIMA",
+      "gradcam_produced": true
+    },
+    {
+      "kind": "rejected",
+      "true_label": "Pasture",
+      "predicted_label": "Pasture",
+      "status": "Prediksi: Pasture | confidence 50.4340%; ambang 99.2040%. DITOLAK: kepercayaan model rendah",
+      "gradcam_produced": true
+    }
+  ],
+  "checkpoint_sha256": "313873f1c1a8be382afa8e60a85047effdac4ab214f3037727f158d954bb6b85",
+  "public_hosting_verified": false,
+  "browser_visual_test_verified": false
+}

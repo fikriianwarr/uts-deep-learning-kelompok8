@@ -1,0 +1,311 @@
+{
+  "model": "efficientnet",
+  "status": "FINAL_HOLDOUT_EVALUATED",
+  "full_dataset": true,
+  "training_config": {
+    "model": "efficientnet",
+    "data_root": "/workspace/scratch/50482a300873/revised/KELOMPOK8/data/EuroSAT_RGB",
+    "out": "artifacts/eksperimen",
+    "image_size": 64,
+    "batch_size": 64,
+    "epochs": 8,
+    "patience": 4,
+    "learning_rate": 5e-05,
+    "seed": 42,
+    "workers": 0,
+    "sample_limit": 0,
+    "no_pretrained": false,
+    "freeze_backbone": false,
+    "cpu": false,
+    "resume": "artifacts/stage1/efficientnet/best.pt"
+  },
+  "train_samples": 18900,
+  "val_samples": 4050,
+  "test_samples_reserved": 4050,
+  "checkpoint_sha256": "313873f1c1a8be382afa8e60a85047effdac4ab214f3037727f158d954bb6b85",
+  "params": 4020358,
+  "trainable_params": 4020358,
+  "best_epoch": 8,
+  "validation_metrics": {
+    "loss": 0.18570977339038142,
+    "accuracy": 0.9461728395061728,
+    "macro_precision": 0.9473219957262312,
+    "macro_recall": 0.9429555555555555,
+    "macro_f1": 0.9446476777801882
+  },
+  "history": {
+    "train_loss": [
+      1.1155817762947586,
+      0.5583255538990889,
+      0.41094648435159964,
+      0.3470071448220147,
+      0.2950931790959898,
+      0.24788002596961128,
+      0.21886632615296298,
+      0.18959074355937816
+    ],
+    "train_accuracy": [
+      0.6714814814814815,
+      0.8314285714285714,
+      0.8731746031746032,
+      0.8948677248677249,
+      0.9108465608465608,
+      0.9218518518518518,
+      0.928994708994709,
+      0.9385185185185185
+    ],
+    "val_loss": [
+      0.5386467687583264,
+      0.3669931759657683,
+      0.2994682499214455,
+      0.2562418906776993,
+      0.22941068037056628,
+      0.20788915732760488,
+      0.1981830605754146,
+      0.18570977339038142
+    ],
+    "val_accuracy": [
+      0.8375308641975309,
+      0.8928395061728395,
+      0.9118518518518518,
+      0.9244444444444444,
+      0.9323456790123457,
+      0.9390123456790124,
+      0.9395061728395062,
+      0.9461728395061728
+    ],
+    "val_macro_f1": [
+      0.8324205661376982,
+      0.8896264341399714,
+      0.9092056364215615,
+      0.9216354041197224,
+      0.9298233636119241,
+      0.9369713530967889,
+      0.9384410341709541,
+      0.9446476777801882
+    ]
+  },
+  "split_manifest_sha256": "3ba6a3aaefdfba8b67e713454a0f10ca012ea8c8b9fc7a543db93a1efd20b1dc",
+  "elapsed_seconds": 1217.52,
+  "environment": {
+    "python": "3.12.14",
+    "pytorch": "2.5.1+cpu",
+    "torchvision": "0.20.1+cpu",
+    "gpu": "CPU",
+    "libraries": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.8",
+      "Pillow": "11.3.0",
+      "gradio": "5.49.1",
+      "tqdm": "4.70.1"
+    }
+  },
+  "test_samples": 4050,
+  "test_metrics": {
+    "loss": 0.17072046309341618,
+    "accuracy": 0.9439506172839506,
+    "macro_precision": 0.9443936165488761,
+    "macro_recall": 0.9424666666666667,
+    "macro_f1": 0.9431490692111005
+  },
+  "classification_report": {
+    "AnnualCrop": {
+      "precision": 0.9585253456221198,
+      "recall": 0.9244444444444444,
+      "f1-score": 0.9411764705882353,
+      "support": 450.0
+    },
+    "Forest": {
+      "precision": 0.9382978723404255,
+      "recall": 0.98,
+      "f1-score": 0.9586956521739131,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "precision": 0.9201773835920177,
+      "recall": 0.9222222222222223,
+      "f1-score": 0.9211986681465039,
+      "support": 450.0
+    },
+    "Highway": {
+      "precision": 0.9186351706036745,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9259259259259259,
+      "support": 375.0
+    },
+    "Industrial": {
+      "precision": 0.9862637362637363,
+      "recall": 0.9573333333333334,
+      "f1-score": 0.9715832205683356,
+      "support": 375.0
+    },
+    "Pasture": {
+      "precision": 0.9615384615384616,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.9385665529010239,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "precision": 0.8962765957446809,
+      "recall": 0.8986666666666666,
+      "f1-score": 0.8974700399467377,
+      "support": 375.0
+    },
+    "Residential": {
+      "precision": 0.9389473684210526,
+      "recall": 0.9911111111111112,
+      "f1-score": 0.9643243243243244,
+      "support": 450.0
+    },
+    "River": {
+      "precision": 0.9345549738219895,
+      "recall": 0.952,
+      "f1-score": 0.9431968295904888,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "precision": 0.9907192575406032,
+      "recall": 0.9488888888888889,
+      "f1-score": 0.9693530079455165,
+      "support": 450.0
+    },
+    "accuracy": 0.9439506172839506,
+    "macro avg": {
+      "precision": 0.9443936165488761,
+      "recall": 0.9424666666666667,
+      "f1-score": 0.9431490692111005,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "precision": 0.9445335109892883,
+      "recall": 0.9439506172839506,
+      "f1-score": 0.9439562042746759,
+      "support": 4050.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      416,
+      2,
+      3,
+      3,
+      0,
+      3,
+      19,
+      0,
+      3,
+      1
+    ],
+    [
+      0,
+      441,
+      5,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      415,
+      5,
+      0,
+      3,
+      14,
+      7,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      2,
+      350,
+      4,
+      0,
+      3,
+      3,
+      11,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      359,
+      0,
+      1,
+      13,
+      0,
+      0
+    ],
+    [
+      4,
+      12,
+      5,
+      1,
+      0,
+      275,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      8,
+      1,
+      19,
+      6,
+      1,
+      0,
+      337,
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      446,
+      0,
+      3
+    ],
+    [
+      3,
+      1,
+      0,
+      12,
+      0,
+      2,
+      0,
+      0,
+      357,
+      0
+    ],
+    [
+      1,
+      8,
+      2,
+      1,
+      0,
+      3,
+      0,
+      0,
+      8,
+      427
+    ]
+  ],
+  "final_selection_rule": "maximum validation macro-F1; test reserved for final report only",
+  "checkpoint_best_epoch": 8
+}
